@@ -1,4 +1,42 @@
 # exp
+Exp 8th
+
+Downloads → ngrok
+cmd
+ngrok http 8080
+Copy forwarding link
+Repository settings of github
+webhook → Add Webhook
+paste url forwarding one / github-webhook/
+Applications.json
+
+In git you should be able to see
+jenkins , Main 
+As you commit you can build now
+it will work.
+
+Exp 9th
+
+jenkins file , Main 
+.txt .txt
+
+Jenkins → new item → jenkins testing →
+Pipeline
+
+Pipeline script from SCM in Pipeline
+SCM → Git
+Repository url , branch → main
+Save
+Build now
+
+⸻
+
+Exp 10th
+
+Plugins → install plugins → BlueOcean →
+Enable
+Open OceanBlue
+
 
 Exp 11
 
