@@ -1,4 +1,89 @@
-# exp
+# exp4
+Steps:
+1.Create a New Repository on GitHub
+Login to GitHub
+Click New Repository
+Enter repository name (example: Git_PullRequests)
+Select Public
+Check Add README.md
+Click Create Repository
+
+
+2. Clone Repository to Local System
+>>git clone <repository-url>
+>>cd Git_PullRequests
+
+3. Create Files in Master Branch
+Create a file:
+touch file1.txt
+Add content:
+echo "This file is created in master branch" > file1.txt
+Check status:
+git status
+Add and Commit in Master
+git add file1.txt
+git commit -m "Initial commit in master"
+
+
+4.Push Changes to Master/main
+git push origin main
+5. Pull Latest Changes (Safe Practice)
+git pull origin main
+6. Create Feature Branch
+git branch feature-1
+git checkout feature-1
+
+
+
+Step 7: Modify Files in Feature Branch
+Edit existing file:
+echo "This change is from feature-1 branch" >> file1.txt
+Create new file:
+touch feature.txt
+echo "Feature branch file" > feature.txt
+Check status:
+git status
+Add and Commit in Feature Branch
+git add .
+git commit -m "Changes done in feature-1"
+
+
+Step 8: Push Feature Branch to GitHub
+git push origin feature-1
+
+
+
+Step 9: Create Pull Request (GitHub UI)
+Open GitHub repository
+Click Compare & Pull Request
+Base branch → master
+Compare branch → feature-1
+Add description
+Click Create Pull Request
+This step is required because it ensures that changes made in a separate branch (feature-1) are reviewed and approved before being merged into the main branch (master). It helps prevent errors, maintain code quality, and allows collaboration by letting others see, comment on, or suggest improvements to your changes. Without a pull request, changes could be merged directly, which might introduce bugs or conflicts in the main code.
+Step 10: Review Pull Request
+Reviewer checks code
+Approves changes
+
+Step 11: Merge Pull Request
+Click Merge Pull Request
+Confirm merge
+Feature-1 code is merged into master.
+
+Merge Pull Request in GitHub means you are taking the changes from a feature branch (like feature-1) and combining them into the base branch (usually master or main).
+Step 12: Update Local Master After Merge
+git checkout master
+git pull origin master
+Step 13: Verify Commit History
+git log --oneline
+Step 14: Delete Feature Branch (Optional but Best Practice)
+Local:
+git branch -d feature-1
+Remote:
+git push origin --delete feature-1
+
+
+
 Exp 8th
 
 Downloads → ngrok
